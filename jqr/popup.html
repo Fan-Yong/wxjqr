@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>weixinMJ Popup</title>
+    <style>
+    body {
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      background: white;
+    }
+
+    div:first-child {
+      margin-top: 0px;
+    }
+
+    div {
+      cursor: pointer;
+      text-align: center;
+      padding: 1px 3px;
+      font-family: sans-serif;      
+      font-size: 0.8em;
+      width: 260px;
+      margin-top: 1px;
+      background: #dadada;
+	  padding:5px;
+    }
+    div:hover,.btn:hover {
+      background: #e8eaed;
+    }
+	.btn{
+		background:#c8c8c8;
+	}
+
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+  <div type="button" id="tip" style="display:none"><strong>tip:</strong><br>open other page to begin chat</div>
+  <div type="button" id="owx" style="display:none">Open WeiXin And Login</div>  
+  <div type="button" id="removechat" style="display:none">Remove Chat</div>
+  <div type="button" id="chat" style="display:none">Begin Chat</div>
+   <div type="button" id="register" style="display:none">register</div>
+  <div type="button" id="reg" style="display:none">
+  	Regcode:&nbsp;<input  type=text size=19 value="" id="t_reg">&nbsp;<input type="button" id="b_reg" value="ok">  	
+  </div>
+  <div type="button" id="help" class="btn" style="">help</div>
+</div>
+  </body>
+</html>

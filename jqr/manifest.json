@@ -1,0 +1,29 @@
+﻿{
+  "name": "微信自动应答",
+  "description": "shijiazhuang",
+  "version": "1.0",
+  "permissions": ["activeTab","storage","notifications","http://www.datun.com.cn/*"],
+   "content_scripts": 
+    [
+        {
+            "matches": ["https://wx.qq.com/*"], 
+            "all_frames": true,          
+            "js": ["js/jquery.min.js","js/content-script.js"],            
+            "run_at": "document_end"
+        }
+    ],
+   "background":
+    {
+        "scripts": ["js/background.js"]
+    }, 
+   "web_accessible_resources":[
+   "js/jcontent-script.js","js/inject.js"
+   ],
+  
+  "browser_action": {
+      "default_title": "sjzgroupmsg",
+      "default_icon": "icon128.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
